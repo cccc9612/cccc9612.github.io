@@ -12,10 +12,85 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="icon" href="/images/cl.png">
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+	<!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<style>
+		/* Existing styles... */
+
+		/* Updated styles for skills icons */
+		.skills-icons {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			/* 5 columns */
+			grid-gap: 10px;
+			/* Spacing between icons */
+			justify-content: center;
+			align-items: flex-end;
+			list-style: none;
+			/* Remove list bullets */
+			padding: 0;
+			/* Remove default padding */
+			margin: 0 auto;
+			/* Center the grid */
+			max-width: 1200px;
+			/* Maximum width of the grid */
+		}
+
+		.skills-icons li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 8px;
+			width: 130px;
+			height: 130px;
+			box-sizing: border-box;
+
+		}
+
+		.skills-icons i {
+			font-size: 2em;
+			color: white;
+			margin-bottom: 8px;
+		}
+
+		.skills-icons span {
+			color: white;
+			font-size: 0.8em;
+		}
+
+		/* Responsive adjustments */
+		@media screen and (max-width: 980px) {
+			.skills-icons {
+				grid-template-columns: repeat(5, 1fr);
+				/* 3 columns on medium screens */
+			}
+
+			.skills-icons li {
+				width: 100px;
+				/* Adjust size for medium screens */
+				height: 100px;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.skills-icons {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			.skills-icons li {
+				width: 80px;
+				height: 80px;
+			}
+		}
+	</style>
+
+
+
 </head>
+
 
 <body class="is-preload">
 
@@ -36,10 +111,10 @@
 					<div class="span-1-5" style="text-align:center; width:100%;">
 						<ul class="contact-icons color1"
 							style="justify-content: center; display: flex; list-style: none; padding: 0px;">
-							<li class="icon solid fa-envelope"><a href="mailto:cindygxli@gmail.com"></a></li>
-							<li class="icon brands fa-github"><a href="https://github.com/cccc9612"></a></li>
+							<li class="icon solid fa-envelope"><a href="mailto:cindygxli@gmail.com">Email</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/cccc9612">GitHub</a></li>
 							<li class="icon brands fa-linkedin-in"><a
-									href="https://www.linkedin.com/in/guoxin-li-1a9249185/"></a>
+									href="https://www.linkedin.com/in/guoxin-li-1a9249185/">LinkedIn</a>
 							</li>
 						</ul>
 					</div>
@@ -68,34 +143,30 @@
 				</div>
 			</section>
 
-			<!-- Panel -->
-			<section class="panel color1">
-				<div class="intro joined">
-					<h2 class="major">Skills</h2>
-					<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed
-						feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat
-						magna etiam.</p>
-				</div>
-				<div class="inner">
-					<ul class="grid-icons three connected">
-						<li><span class="icon fa-gem"><span class="label">Lorem</span></span></li>
-						<li><span class="icon solid fa-camera-retro"><span class="label">Ipsum</span></span></li>
-						<li><span class="icon solid fa-cog"><span class="label">Dolor</span></span></li>
-						<li><span class="icon solid fa-paper-plane"><span class="label">Sit</span></span></li>
-						<li><span class="icon solid fa-chart-bar"><span class="label">Amet</span></span></li>
-						<li><span class="icon solid fa-code"><span class="label">Nullam</span></span></li>
-					</ul>
-				</div>
-			</section>
 
 			<!-- Panel (Spotlight) -->
 			<section class="panel spotlight large left">
 				<div class="content span-5">
-					<h2 class="major">Magna amet tempus</h2>
-					<p>Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex,
-						sagittis commodo enim risus sed magna nulla. Vestibulum ut consequat velit. Curabitur vitae
-						libero lorem. Quisque iaculis porttitor blandit. Nullam quis sagittis maximus. Sed vel nibh
-						libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar.</p>
+					<h2 class="major">Skills</h2>
+					<ul class="skills-icons">
+						<li><i class="fab fa-aws"></i> AWS</li>
+						<li><i class="fas fa-code-branch"></i> Git</li>
+						<li><i class="fab fa-github"></i> GitHub</li>
+						<li><i class="fas fa-cloud"></i> Heroku</li>
+						<li><i class="fab fa-html5"></i> HTML5</li>
+						<li><i class="fab fa-js-square"></i> JavaScript</li>
+						<li><i class="fab fa-node-js"></i> Node.js</li>
+						<li><i class="fas fa-database"></i> PostgreSQL</li>
+						<li><i class="fab fa-react"></i> React</li>
+						<li><i class="fab fa-r-project"></i> Redux</li>
+						<li><i class="fas fa-gem"></i> Ruby</li>
+						<li><i class="fas fa-plug"></i> Socket.io</li>
+						<li><i class="fas fa-database"></i> SQL</li>
+						<li><i class="fab fa-npm"></i> npm</li>
+						<li><i class="fas fa-laptop-code"></i> Visual Studio</li>
+					</ul>
+
+
 				</div>
 				<div class="image filtered tinted" data-position="top right">
 					<img src="images/pic03.jpg" alt="" />

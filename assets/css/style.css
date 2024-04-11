@@ -1,0 +1,79 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contact-icons li a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.skills-section {
+    background-color: #f8f8f8;
+    /* Light grey background */
+    padding: 20px;
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: box shadow for depth */
+    max-width: 400px;
+    /* Adjust the width as necessary */
+    margin: 20px auto;
+    /* Centers the section */
+}
+
+.skills-header {
+    text-align: center;
+    color: #333;
+    /* Dark text for contrast */
+    margin-bottom: 16px;
+}
+
+.skills-list {
+    list-style: none;
+    /* Removes default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    font-size: 18px;
+    /* Adjust font size as needed */
+    color: #555;
+    /* Medium contrast for text */
+    line-height: 1.6;
+    /* Spacing between lines */
+    margin-bottom: 10px;
+    /* Spacing between items */
+}
+
+.skills-list i {
+    margin-right: 10px;
+    color: #666;
+    /* Icon color */
+    width: 30px;
+    /* Ensures icons align even if different widths */
+    text-align: center;
+}
+
+/* Optional: add a hover effect to list items */
+.skills-list li:hover {
+    color: #000;
+    /* Darker text on hover for contrast */
+    transition: color 0.3s ease;
+}
